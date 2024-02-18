@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../css/dangnhap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+    <link rel="stylesheet" href="../font/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script >
+        $(document).ready(function(){
+            $("#loginbtn").click(function(login){
+        var tendn=$("#txtName").val()
+        var sdt=$("#txtNumber").val()
+        var checkemail=$("#txtEmail").val()
+        var checkpass =$("#txtPassword").val()
+
+        var user=localStorage.getItem(tendn)
+        var data=json.parse(user)
+        if(user==null)
+        {
+            alert("vui lòng nhập username và password")
+        }
+        else if(tendn ==data.tendn && checkpass==data.checkpass)
+        {
+            alert("Đăng nhập thành công")
+            window.location.href="formdangnhap.html"
+        }
+        else{
+            alert("đăng nhập thất bại")
+        }
+    })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid">
+                <!--đăng kí,đăng nhập-->
+                <div class="header_Sign_up_login">
+                    <div class="header_signup">
+                        <a href="./formdangki.html" class="header_Sign_up_login_conten">Đăng Kí</a>
+                    </div>
+                    <div class="header_login">
+                        <a href="./formdangnhap.html" class="header_Sign_up_login_conten">Đăng nhập</a>
+                    </div>
+                </div>
+                <!--tìm kiếm-->
+                <div class="header-search">
+                    <div class="header-search-logo">
+                        <img src="../img/logo/logo-sua.png" alt="" class="header-search-logo-item">
+                    </div>
+                    <div class="header-search-input">
+                        <input type="text" name="" id="" class="header-search-input-item"
+                            placeholder="Tìm Kiếm Sản Phẩm">
+                        <div class="header-search-button">
+                            <button class="header-search-button-icon">
+                                <i class="ti-search"></i>
+                            </button>
+                        </div>
+                        <div class="header-search-history">
+                            <ul class="header-search-history-list">
+                                <li class="header-search-history-list-item-1">Lịch Sử Tìm Kiếm</li>
+                                <li class="header-search-history-list-item">Sữa Ensure Gold HMB</li>
+                                <li class="header-search-history-list-item">Sữa bột Enfamil A+ 2 </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-search-cart">
+                        <i class="ti-shopping-cart header-search-cart-item"></i>
+                        <a href="" class="header-search-cart-conten">Giỏ Hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="grid">
+                <!--MENU-->
+                <div class="menu-list" style="line-height: 25px;">
+                    <div>
+                        <div class="menu-list-icon">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                    <div class="menu-list-item"><a href="./index.html"><i class="ti-home"></i> Trang Chủ</a></div>
+                    <div class=" menu-list-item"><a href="../html/sanpham-home.html">Sản Phẩm</a></div>
+                    <div class="menu-list-item"><a href="../html/thuonghieu.html">Thương Hiệu</a></div>
+                    <div class="menu-list-item"><a href="../html/gioithieu.html">Giới Thiệu</a></div>
+                </div>
+            </div>
+        </div>
+                        <!--form dang nhap-->
+             
+        <div class="container">
+
+           
+                <div class="grid" style="display: flex;" >
+                    <div class="form-login">
+                        <div class="form-login-header">
+                            <p class="form-login-header-item">
+                                Đăng Nhập
+                            </p>
+                        </div>
+                        <div class="form-login-input">
+                            <div><input type="text" name="" id="" placeholder="Tên đăng nhập"
+                                    class="form-login-input-item"></div>
+                            <div><input type="password" name="" id="" placeholder="Mật khẩu" class="form-login-input-item">
+                            </div>
+                            <div class="form-login-input-submit">
+                                <button class="form-login-input-submit-item" type="submit" id="loginbtn">Đăng Nhập </button>
+                            </div>
+                        </div>
+                        <div class="form-login-fogot-password">
+                            <a href="">Quên mật khẩu </a>
+                        </div>
+                        <div class="form-login-sociel">
+                            <div class="form-login-input-facebook">
+                                <i class="ti-facebook">
+                                    <a href="" style="text-decoration: none; color: black;">facebook</a>
+                                </i>
+                            </div>
+                            <div class="form-login-input-google">
+                                <i class="ti-google">
+                                    <a href="" style="text-decoration: none; color: black;">Google</a>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="form-login-footer">
+                            <p class="form-login-footer-conten">Bạn mới biết đến trang web này ? <a
+                                    href="./formdangki.html">Đăng Kí</a></p>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <!--footer-->
+        <div class="Footer">
+            <div class="grid">
+                <div class="grid" >
+                    <div class="footer-item">
+                        <div class="footer-item-1">
+                            <p class="footer-item-1-header">Mọi chi tiết xin liên hệ :</p>
+                            <p class="footer-1-conten">
+                                <i class="ti-location-pin"></i> Địa chỉ: 39 thạnh Xuân 36B khu Phố 1 phường Thạnh Xuân Quận 12 Thành Phố Hồ Chí Minh
+                            </p>
+                            <p class="footer-1-conten">
+                                <i class="ti-mobile"></i> Số Điện thoại: 0708223608 hoặc 0346656045
+                            </p>
+                            <p class="footer-1-conten">
+                                <i class="ti-email"></i> Enmail: vodangphat2002@gmail.com hoặc minhticte123@gmail.com
+                            </p>
+                            <p class="footer-1-conten"><i class="ti-pie-chart"></i>
+                                Giờ mở cửa : Từ 8:00am - 20:00pm
+                            </p>
+                        </div>
+                        <div class="footer-item-2">
+                             <h1 class="footer-item-2-header">Về cửa hàng</h1>
+                             <p class="footer-item-2-conten"><a href="">Câu hỏi thường gặp:</a></p>
+                             <p class="footer-item-2-conten"><a href="">Hỗ trợ thanh toán :</a></p>
+                             <p class="footer-item-2-conten"><a href="">Hỗ trợ giao hàng :</a></p>
+                        </div>
+                        <div class="footer-item-3">
+                            <h1 class="footer-item-3-header">Kết nối với cửa hàng</h1>
+                            <div class="footer-item-3-conten"><i class="ti-facebook"></i> <i class="ti-google"></i> <i class="ti-twitter-alt"></i> <i class="ti-instagram"></i></div>
+                            <div class="font-phagragap" style="margin-top: 20px;">
+                                <h2>Thông tin nhóm:</h2>
+                                <div>Thành Viên:Võ Đăng Phát,Đặng Ngọc Minh</div>
+                                <div>Lớp Học Phần:DHKTPM16B</div>
+                                <div>Giảng Viên : Cô Nguyễn Thị Hoàng Khánh</div>
+                            </div>
+                                <p class="footer-item-3-conten-2"> <a href="../html/sitemap.html" style="text-decoration: none;color: black;">sitemap </a><i class="ti-angle-right" style="font-size: 1.4rem;"></i></p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+    </div>
+
+</body>
+
+</html>

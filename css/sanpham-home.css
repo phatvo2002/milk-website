@@ -1,0 +1,428 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.input-mid
+{
+    text-align: center;
+}
+.cusor-product
+{
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none;
+}
+li>a:hover{
+    text-decoration: none;
+}
+
+/*------------------nav product--------*/
+.container-product{
+  
+  margin: 0;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.menu-product
+{
+    width: 100%;
+    background-color: #dfe6e9;
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    margin-top: 30px;
+    border-radius: 3px 3px 0 0;
+}
+.menu-product-header
+{
+   font-size: 1.4rem;
+   
+}
+.menu-product-header-item
+{
+
+}
+.menu-product-header-icon
+{
+   margin-right: 10px;
+}
+.menu-product-list
+{
+    list-style: none;
+    padding: 5px 12px;
+    background-color:#dfe6e9 ;
+    margin: 0;
+    border-radius: 0 0 3px 3px;
+    
+}
+.menu-product-list-item{
+    font-size: 1.5rem;
+    padding: 10px 10px;
+   
+}
+.menu-product-list-item>a
+{
+    text-decoration: none;
+    color: #2d3436;
+}
+.menu-product-list-item>a:hover
+{
+  color: #f39c12;
+}
+/*-----------------home product------------*/
+.home-product
+{
+    margin-top: 30px;
+}
+.home-product-header
+{
+    border-bottom: 1px solid black;
+}
+.product-header-paragraph
+{
+    margin-top: 40px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: -5px;
+}
+.home-product-filter
+{
+    width: 100%;
+    background-color: #f1f2f6;
+}
+.home-product-filter-list
+{
+    padding: 20px 6px;
+    font-size: 1.5rem;
+}
+.home-product-filter-list-item
+{
+ display: inline;
+ margin-left: 10px; 
+ padding: 6px 12px;
+ font-weight: 600;
+ border-radius: 3px;
+ background-color: white;
+}
+.home-product-filter-list-item:hover{
+  background-color: #f39c12;
+}
+.home-product-filter-list-item-1
+{
+    display: inline;
+    padding: 0 12px;
+    font-weight: 500;
+}
+/*---------------sản phẩm-home-----------*/
+.all-product
+{
+  padding: 10px;
+  box-shadow: 0 0 8px #b2bec3;
+  border-radius: 3px;
+  position: relative;
+}
+.all-product:hover
+{
+    border: 1px solid #74b9ff;
+}
+.all-product-img
+{
+  
+}
+.all-product{
+   margin-top: 10px;
+}
+.all-product-img-item
+{
+  width: 100%;
+}
+.all-product-header
+{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3rem;
+  height: 1.3rem;
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.all-product-header>a
+{
+    text-decoration: none;
+    color: black;
+}
+.all-product-header>a:hover
+{
+    color: #fdcb6e;
+}
+.all-product-price
+{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.price-basic
+{
+   font-size: 1.2rem;
+   color: #b2bec3;
+   text-decoration: line-through;
+}
+.price-sale
+{
+    font-size: 1.3rem;
+    line-height: 13px;
+    font-weight: 700;
+    margin-top: 3px;
+}
+.all-product-producer
+{
+   font-size: 0.9rem;
+}
+.all-product-producer>a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+.all-product-footer
+{
+  
+}
+.all-product-footer-Purchase
+{
+        width: 100%;
+        height: 35px;
+        outline: none;
+        background-color: #fdcb6e;
+        border: none;
+        border-radius: 3px;
+        margin-top: 2px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.2rem;
+}
+
+.all-product-footer-Purchase:hover
+{
+    background-color:#f39c12;
+    
+}
+.all-product-sale
+{
+position: absolute;
+   top: 1%;
+   left: 70%;
+    width: 40px;
+    background-color: #f39c12;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 20px;
+}
+.all-product-sale>p
+{
+    text-align: center;
+}
+.modal-home-item
+{
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.product-button
+{
+    margin-top: 10px;
+    display: flex;
+}
+.product-button-item
+{
+    width: 100%;
+    height: 40px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    background-color: #fdcb6e;
+    
+}
+.product-button-item:hover
+{
+    background-color: #f39c12;
+   
+}
+.product-modal-item
+{
+    width: 20%;
+    border: 1px solid black;
+    margin-left: 40px;
+}
+.modal-product
+{ 
+    width: 80%;
+    height: 450px;
+    background:url(../img/sảnphảm/sữa\ bột-1.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-1
+{ 
+    width: 80%;
+    height: 450px;
+    background:url(../img/sảnphảm/sữa\ bột\ 2.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+
+.modal-product-2
+{ 
+    width: 80%;
+    height: 450px;
+    background:url(../img/sảnphảm/sữa\ bà\ bầu\ 1.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+
+.modal-product-3
+{ 
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/người\ già\ 4.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+
+.modal-product-4
+{ 
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/người\ già\ 5.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-5
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/bà\ bầu\ 3.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-6
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/bà\ bau\ 4.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-7
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/trẻ\ em\ 2.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-8
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/người\ già\ 1.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-9
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/Bà\ bầu\ 5.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-10
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/trẻ\ em\ 3.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-11
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/người\ già\ 2.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-12
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/bà\ bầu\ 6.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-13
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/người\ già\ 3.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+.modal-product-14
+{
+    
+    width: 80%;
+    height: 440px;
+    background:url(../img/sảnphảm/trẻ\ em\ 4.jpg);
+    background-size: 100%;
+    margin-left: 50px;
+}
+/*-------cart*/
+.cart{
+  position: fixed;
+  height: 100vh;
+  width: 600px;
+  right: -100%;
+  top: 0;
+  background-color: #f6e58d;
+  padding: 20px;
+  overflow: scroll;
+  transition: all 0.3s ease;
+}
+.product-order-item
+{
+    text-align: right;
+    text-decoration: none;
+     padding: 8px;background-color: #f39c12;
+     color: black;border-radius: 5px; 
+     margin-top: 100px;
+}
+.product-order
+{
+    
+    margin-top: 50px;
+}
+.price-sale-item
+{
+    margin-right: 10px;
+    font-size: 1.3rem;
+}

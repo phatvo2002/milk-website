@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../js/main.js">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="../js/data.js"></script>
+    <title>Trang Chủ</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="header">
+            <div class="grid">
+                <!--đăng kí,đăng nhập-->
+                <div class="header_Sign_up_login">
+                    <div class="header_signup">
+                        <a href="./formdangki.html" class="header_Sign_up_login_conten">Đăng Kí</a>
+                    </div>
+                    <div class="header_login">
+                        <a href="./formdangnhap.html" class="header_Sign_up_login_conten">Đăng nhập</a>
+                    </div>
+                </div>
+                <!--tìm kiếm-->
+                <div class="header-search">
+                    <div class="header-search-logo">
+                        <a href="../html/index.html"><img src="../img/logo/logo-sua.png" alt=""
+                                class="header-search-logo-item"></a>
+                    </div>
+                    <div class="header-search-input">
+                        <input type="text" name="" id="" class="header-search-input-item"
+                            placeholder="Tìm Kiếm Sản Phẩm">
+                        <div class="header-search-button">
+                            <button class="header-search-button-icon">
+                                <i class="ti-search" style="font-size: 1.5rem;"></i>
+                            </button>
+                        </div>
+                        <div class="header-search-history">
+                            <ul class="header-search-history-list">
+                                <li class="header-search-history-list-item-1">Lịch Sử Tìm Kiếm</li>
+                                <li class="header-search-history-list-item">Sữa Ensure Gold HMB</li>
+                                <li class="header-search-history-list-item">Sữa bột Enfamil A+ 2 </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-search-cart">
+                        <i class="ti-shopping-cart header-search-cart-item"></i>
+                        <a href="" class="header-search-cart-conten">Giỏ Hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="grid">
+                <!--MENU-->
+                <div class="menu-list">
+                    <div>
+                        <div class="menu-list-icon">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                    <div class="menu-list-item"><a href="./index.html" ><i class="ti-home"></i> Trang Chủ</a></div>
+                    <div class=" menu-list-item"><a href="./sanpham-home.html">Sản Phẩm</a></div>
+                    <div class="menu-list-item"><a href="../html/thuonghieu.html">Thương Hiệu</a></div>
+                    <div class="menu-list-item"><a href="../html/gioithieu.html">Giới Thiệu</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="container-img">
+                    <div class="container-img-slider-1"><img src="../img/slogan/slider3.jpg" id="changeleft"
+                             alt="" class="container-img-item"></div>
+                    <script>
+                        index = 0
+                        function changeIMG() {
+                            var imgss = ["../img/slogan/slider3.jpg","../img/slogan/slider2.jpg" , "../img/slogan/slider4.jpg"]
+                            document.getElementById("changeleft").src = imgss[index]
+                            index++
+                            if (index == 3) {
+                                index = 0
+                            }
+                        }
+
+                    </script>
+                    <div class="container-slider-2">
+                        <div class="container-slider-2-1">
+                            <img src="../img/slogan/enfamama-cho-me-bau.jpg" alt="" class="container-slider-2-item">
+                        </div>
+                        <div class="container-slider-2-2">
+                            <img src="../img/slogan/top-banner-detail-mb.jpg" alt="" class="container-slider-2-item-1">
+                        </div>
+                    </div>
+                    <button class="button-change-1" type="button" onclick="changeIMG();"><i class="ti-angle-right"
+                            style="align-items: center;"></i></button>
+                    <button class="button-change-2" type="button" onclick="changeIMG();"><i class="ti-angle-left"
+                            style="align-items: center;"></i></button>
+                </div>
+
+                  <div class="container-trademark-main">
+                      <img src="../img/container-img/pngtree-creative-simple-milk-promotion-psd-material-image_191927.jpg" alt="" class="container-trademark-item">
+
+                      <div class="container-trademark-conten">
+                          <h2 class="container-trademark-1">
+                              Các thương hiệu nổi tiếng
+                          </h2>
+                          <button class="container-trademark-button">
+                              <a href="../html/thuonghieu.html" style="text-decoration: none; color: black;font-weight: 500;font-size: 1.5rem;">Xem them</a>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="container-ads">
+                    <div class="container-ads-video"><iframe width="560" height="315" style="margin-top: 20px;" src="https://www.youtube.com/embed/Ov_tzqOIy10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="container-ads-conten">
+                       <h1>Thương Hiệu Vinamilk</h1>
+                       <p style="font-size: 1.3rem;">Vinamilk là một công ty có ngành nghề đa dạng như chăn nuôi bò sữa, sản xuất thức ăn cho gia súc, trồng trọt… Trong 8 năm, với nhiều nỗ lực, công ty đã xây dựng thành công 5 trang trại bò sữa và đã có kế hoạch xây thêm 4 trang trại tiếp theo. Vinamilk rất chú trọng vào việc đầu tư các thiết bị công nghệ.</p>
+                       <button class="container-ads-button" style="">
+                               <a href="../html/thuonghieu.html" style="text-decoration: none; color: black;font-weight: 300;font-size: 1.4rem;">Xem thêm</a>
+                       </button>
+                    </div>
+                  </div>
+
+                  <div class="container-ads" style="margin-top: 30px;">
+                      <div class="container-ads-conten">
+                          <h1>Thương Hiệu Priso</h1>
+                          <p style="font-size: 1.3rem;">Friso là sản phẩm sữa thuộc tập đoàn FrieslandCampina, một trong những tập đoàn liên hợp sữa lớn nhất trên thế giới hiện nay. Xét về quy mô, tập đoàn có chi nhánh tại 36 quốc gia, với tổng số nhân viên khoảng 23.816 người. Ngoài cung cấp sữa, FrieslandCampina còn cung cấp các sản phẩm tiêu dùng như bơ, sữa chua hoặc phô mai cho nhiều khách hàng chuyên môn, các ngành công nghiệp thực phẩm cũng như công nghiệp dược phẩm. </p>
+                          <button class="container-ads-button" style="">
+                              <a href="../html/thuonghieu.html" style="text-decoration: none; color: black;font-weight: 300;font-size: 1.4rem;">Xem thêm</a>
+                            </button>
+                        </div>
+                        <div class="container-ads-video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/uELCwp2qD-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                  </div>
+                  
+
+                <div class="container-conten">
+                    <h1>Các Sản Phẩm Nổi Bật</h1>
+                    <a href="../html/sanpham-home.html" class="container-conten-next ">Xem thêm <i class="ti-angle-right"></i></a>            
+                </div>
+                <div class="grid_row" style="padding-bottom: 20px;">
+                    <div class="grid_colum-2-4">
+                        <div class="container-product-featured">
+                            <div class="container-product-featured-img">
+                                <img src="../img/sảnphảm/người già 4.jpg" alt=""
+                                    class="container-product-featured-img-item">
+                            </div>
+                            <div class="container-product-featured-conten">
+                                <a href="">Sữa Ensure Gold (900g)</a>
+                            </div>
+                            <div class="container-product-featured-money">
+                                <span class="container-product-featured-money-conten-1">765.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                                <span class="container-product-featured-money-conten-2"> -535.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                            </div>
+                            <div class="container-product-hot">
+                                <span>HOT</span>
+                            </div>
+                            <div class="container-product-hot-sale">
+                                <span>-30%</span>
+                            </div>
+
+                            <div class="container-product-button">
+                                <button type="button" class="container-product-button-item"><i class="ti-shopping-cart" style="margin-right: 5px; font-size: 1.5rem;"></i>THÊM VÀO GIỎ</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="grid_colum-2-4">
+                        <div class="container-product-featured">
+                            <div class="container-product-featured-img">
+                                <img src="../img/sảnphảm/trẻ em 4.jpg" alt=""
+                                    class="container-product-featured-img-item">
+                            </div>
+                            <div class="container-product-featured-conten">
+                                <a href="">Sữa bột NAN Optipro 4 (900g)</a>
+                            </div>
+                            <div class="container-product-featured-money">
+                                <span class="container-product-featured-money-conten-1">380.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                                <span class="container-product-featured-money-conten-2"> -266.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                            </div>
+                            <div class="container-product-hot">
+                                <span>HOT</span>
+                            </div>
+                            <div class="container-product-hot-sale">
+                                <span>-30%</span>
+                            </div>
+
+                            <div class="container-product-button">
+                                <button type="button" class="container-product-button-item"><i class="ti-shopping-cart" style="margin-right: 5px; font-size: 1.5rem;"></i>THÊM VÀO GIỎ</button>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="grid_colum-2-4">
+                        <div class="container-product-featured">
+                            <div class="container-product-featured-img">
+                                <img src="../img/sảnphảm/người già 3.jpg" alt=""
+                                    class="container-product-featured-img-item">
+                            </div>
+                            <div class="container-product-featured-conten">
+                                <a href="">Sữa bột Nutren Optimum (400g)</a>
+                            </div>
+                            <div class="container-product-featured-money">
+                                <span class="container-product-featured-money-conten-1">330.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                                <span class="container-product-featured-money-conten-2"> -231.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                            </div>
+                            <div class="container-product-hot">
+                                <span>HOT</span>
+                            </div>
+                            <div class="container-product-hot-sale">
+                                <span>-30%</span>
+                            </div>
+
+                            <div class="container-product-button">
+                                <button type="button" class="container-product-button-item"><i class="ti-shopping-cart" style="margin-right: 5px; font-size: 1.5rem;"></i>THÊM VÀO GIỎ</button>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="grid_colum-2-4">
+                        <div class="container-product-featured">
+                            <div class="container-product-featured-img">
+                                <img src="../img/sảnphảm/bà bầu 3.jpg" alt=""
+                                    class="container-product-featured-img-item">
+                            </div>
+                            <div class="container-product-featured-conten">
+                                <a href="">Sữa bà Bầu Similac Mom IQ (900g)</a>
+                            </div>
+                            <div class="container-product-featured-money">
+                                <span class="container-product-featured-money-conten-1">394.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                                <span class="container-product-featured-money-conten-2"> -315.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                            </div>
+                            <div class="container-product-hot">
+                                <span>HOT</span>
+                            </div>
+                            <div class="container-product-hot-sale">
+                                <span>-20%</span>
+                            </div>
+
+                            <div class="container-product-button">
+                                <button type="button" class="container-product-button-item"><i class="ti-shopping-cart" style="margin-right: 5px; font-size: 1.5rem;"></i>THÊM VÀO GIỎ</button>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="grid_colum-2-4">
+                        <div class="container-product-featured">
+                            <div class="container-product-featured-img">
+                                <img src="../img/sảnphảm/sữa bà bầu 1.jpg" alt=""
+                                    class="container-product-featured-img-item">
+                            </div>
+                            <div class="container-product-featured-conten">
+                                <a href="">Sữa Bầu Enfamama DHA (870g)</a>
+                            </div>
+                            <div class="container-product-featured-money">
+                                <span class="container-product-featured-money-conten-1">340.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                                <span class="container-product-featured-money-conten-2"> -296.000<sup style="font-size: 1.2rem;font-weight: 600;">đ</sup></span>
+                            </div>
+                            <div class="container-product-hot">
+                                <span>HOT</span>
+                            </div>
+                            <div class="container-product-hot-sale">
+                                <span>-30%</span>
+                            </div>
+
+                            <div class="container-product-button">
+                                <button type="button" class="container-product-button-item"><i class="ti-shopping-cart" style="margin-right: 5px; font-size: 1.5rem;"></i>THÊM VÀO GIỎ</button>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div class="Footer" >
+            <div class="grid" >
+                <div class="footer-item">
+                    <div class="footer-item-1">
+                        <p class="footer-item-1-header">Mọi chi tiết xin liên hệ :</p>
+                        <p class="footer-1-conten">
+                            <i class="ti-location-pin"></i> Địa chỉ: 39 thạnh Xuân 36B khu Phố 1 phường Thạnh Xuân Quận 12 Thành Phố Hồ Chí Minh
+                        </p>
+                        <p class="footer-1-conten">
+                            <i class="ti-mobile"></i> Số Điện thoại: 0708223608 hoặc 0346656045
+                        </p>
+                        <p class="footer-1-conten">
+                            <i class="ti-email"></i> Enmail: vodangphat2002@gmail.com hoặc minhticte123@gmail.com
+                        </p>
+                        <p class="footer-1-conten"><i class="ti-pie-chart"></i>
+                            Giờ mở cửa : Từ 8:00am - 20:00pm
+                        </p>
+                    </div>
+                    <div class="footer-item-2">
+                         <h1 class="footer-item-2-header">Về cửa hàng</h1>
+                         <p class="footer-item-2-conten"><a href="">Câu hỏi thường gặp:</a></p>
+                         <p class="footer-item-2-conten"><a href="">Hỗ trợ thanh toán :</a></p>
+                         <p class="footer-item-2-conten"><a href="">Hỗ trợ giao hàng :</a></p>
+                    </div>
+                    <div class="footer-item-3">
+                        <h1 class="footer-item-3-header">Kết nối với cửa hàng</h1>
+                        <div class="footer-item-3-conten"><i class="ti-facebook"></i> <i class="ti-google"></i> <i class="ti-twitter-alt"></i> <i class="ti-instagram"></i></div>
+                        <div class="font-phagragap" style="margin-top: 20px;">
+                            <h2>Thông tin nhóm:</h2>
+                            <div>Thành Viên:Võ Đăng Phát,Đặng Ngọc Minh</div>
+                            <div>Lớp Học Phần:DHKTPM16B</div>
+                            <div>Giảng Viên : Cô Nguyễn Thị Hoàng Khánh</div>
+                        </div>
+                            <p class="footer-item-3-conten-2"> <a href="../html/sitemap.html" style="text-decoration: none;color: black;">sitemap </a><i class="ti-angle-right" style="font-size: 1.4rem;"></i></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

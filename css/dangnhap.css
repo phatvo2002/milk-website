@@ -1,0 +1,137 @@
+
+
+/*--------form đăng nhập-------*/
+.container
+{
+    background: url(../img/background/6e90abd43e18a2d595b79a96f639de84.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;
+    display: flex;
+}
+
+.form-login
+{
+    margin: auto;
+    width: 400px;
+    background-color: white;
+    padding: 24px;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+}
+
+.form-img-item
+{
+  width: 60%;
+  
+}
+.form-login-header
+{
+  
+  
+}
+.form-login-header-item
+{
+  font-size: 2rem;
+  padding: 10px 6px;
+  font-weight: 500;
+  
+}
+.form-login-input
+{
+   margin-top: 20px;
+   width: 100%;
+}
+.form-login-input-item
+{
+   margin-top: 10px;
+   width: 100%;
+   height: 44px;
+   font-size: 1.5rem;
+   outline: none;
+   border: 1px solid #bdc3c7;
+   padding: 0 6px;
+   border-radius: 5px;
+}
+.form-login-input-item:hover
+{
+    border: 1px solid #2f3542;
+}
+.form-login-input-submit
+{
+   margin-top: 10px;
+  
+}
+.form-login-input-submit-item
+{
+     width: 100%;
+    height: 44px;
+    outline: none;
+    border: none;
+    background-color: #fdcb6e;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-login-input-submit-item:hover
+{
+    background-color: #95a5a6;
+}
+.form-login-fogot-password
+{ 
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+.form-login-fogot-password>a{
+    text-decoration: none;
+    color: #95a5a6;
+}
+.form-login-sociel
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.form-login-input-facebook
+{
+  padding: 4px 20px;
+  border: 1px solid black;
+  font-size: 1.4rem;
+}
+.form-login-input-google
+{
+    border: 1px solid black;
+    padding: 4px 24px;
+    font-size: 1.4rem;
+}
+.form-login-footer
+{
+    margin-top: 20px;
+    margin-left: 20%;
+    font-size: 1.1rem;
+}
+.form-login-footer-conten>a{
+    text-decoration: none;
+    color: #fdcb6e;
+}
+/*footer */
+.Footer
+{
+    background-color:#fdcb6e ;
+    height: 200px;
+    display: flex;
+    
+}
+.footer-item
+{
+   display: flex;
+}
+.footer-header
+{
+    font-size: 1.6rem;
+    margin: auto; 
+    line-height:200px ;
+    font-weight: 700;
+}
